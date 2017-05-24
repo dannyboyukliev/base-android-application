@@ -64,4 +64,8 @@ class LoginActivity : BaseActivity<LoginActivityComponent>(), LoginActivityContr
         activityComponent = applicationComponent?.plus(LoginActivityModule(this))
         activityComponent?.inject(this)
     }
+
+    override fun displayError(message: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 }

@@ -8,7 +8,9 @@ import com.boyukliev.base.presentation.ui.base.BaseView
  * Created with <3 by Boyukliev on 24.5.2017 г..
  */
 interface LoginActivityContract {
-    interface View: BaseView
+    interface View: BaseView {
+        fun displayError(message: String = "Error")
+    }
 
     interface Navigator: BaseNavigator
 
